@@ -31,3 +31,12 @@ body {
     font-family: sans-serif;
     display: -webkit-linear;
 }
+
+footer{
+  margin-left: 93%;
+}
+
+footer img{
+  margin-top: 20px;
+  width: 30px;
+}

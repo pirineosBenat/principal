@@ -9,22 +9,24 @@
 	</head>
 	<body>
 
-
-    <header>
-        <img href="principal.html" src="img/logoInicio.png" />
-    </header>
-
-
-    
+    <!--Para que en 15segundos si no ha clicado nada, se redireccione la pagina-->
     <script language="JavaScript" type="text/javascript">
         var pagina="principal.html"
         function redireccionar() 
         {
         location.href=pagina
         } 
-        setTimeout ("redireccionar()", 3500);
+        setTimeout ("redireccionar()", 15000);
     </script>
 
+    <header>
+        <a href="principal.html"><img src="img/logoInicio.png" /></a>
+    </header>
+
+
+    <footer>
+    <a href="principal.html"><img src="img/arrow.png" /></a>
+    </footer>
 
 	</body>
 
