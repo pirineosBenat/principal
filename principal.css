@@ -53,14 +53,6 @@ body {
   line-height: 1.3;
 }
 
-h1 {
-  font-family: "Lobster", cursive;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-h2 {
-  font-weight: 700;
-}
 
 /**********************logo cabecera*********************/
 #logo{
@@ -143,7 +135,7 @@ nav li#buscador2{
 #search input[type="text"] {
     background: url(img/busca2.png) no-repeat 10px 6px #fcfcfc;
     border: 1px solid #d1d1d1;
-    font: bold 12px Arial,Helvetica,Sans-serif;
+    font-family: courier, 'courier new', monospace;
     color: #bebebe;
     width: 200px;
     padding: 6px 15px 6px 35px;
@@ -168,10 +160,84 @@ nav li#buscador2{
 
 /*****************************Parte central******************/
 
+#sub{
+    width: 80%;
+    margin: 0 auto;
+    z-index: 5;
+    position: absolute;
+    top: 350px;
+    left: 10%;
+}
+
+#sub p{
+    text-align: center;
+    font-family: courier, 'courier new', monospace;
+    color: #bf782c;
+}
+
+#rutas{
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 277px;
+    left: 80%;
+    z-index: 4;
+    background-color: #bf782c;
+}
+
+#rutas p{
+    color: #ffffff;
+    font-size: 11pt;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.pack{
+    height: 550px;
+    width: 100%;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(204,204,204,1);
+    box-shadow: 0px 0px 35px 0px rgba(204,204,204,1);
+}
+
+.pack img{
+    cursor: pointer;
+}
+
+.pack h3{
+    text-align: center;
+    padding: 10px;
+    padding-left: 5px;
+    background: url(img/iconos/ruta.png) no-repeat 25px 1px #fcfcfc;
+    font-family: courier, 'courier new', monospace;
+    font-size: 20px;
+    color: #bf782c;
+}
+
+.pack p{
+    padding: 5px;
+    font-family: courier, 'courier new', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+}
+
+.pack span img{
+    width: 40px;
+    float: left;
+    padding: 4px;
+}
+
+.pack span img.tiempo{
+    padding-top: 5px;
+}
+
 #contenedor{
     /*border: 2px solid blue;*/
     position: absolute;
-    top: 350px;
+    top: 420px;
     width: 100%;
     min-width: 200px;
     padding-top: 20px;
@@ -240,25 +306,11 @@ nav li#buscador2{
     height: 40%;
 }
 
-h3{
-    font-family:sans-serif;
-    color: #bf782c;
-}
-p{
-    color: #383838;
-}
-
-.link{
-    margin-top: 0px;
-    font-family:sans-serif;
-    font-style: italic;
-    color: #cccccc;
-}
 
 /**********************Pie de pagina************************/
 footer{
     position: absolute;
-    top:120%;
+    top:250%;
     margin-top: 150px;
     width: 100%;
     height: 75px;
@@ -313,6 +365,9 @@ footer section img{
 
 
         header{
+            display: none;
+        }
+        #rutas{
             display: none;
         }
         nav li#buscador2{

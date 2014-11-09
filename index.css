@@ -32,6 +32,15 @@ body {
     display: -webkit-linear;
 }
 
+#cita{
+  width: 600px;
+  position: absolute;
+  left: 16%;
+  top:75%;
+  color: #fff;
+  text-align: right;;
+}
+
 footer{
   margin-left: 93%;
 }
